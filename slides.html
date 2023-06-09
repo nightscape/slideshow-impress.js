@@ -1,13 +1,7 @@
 ---
 ---
 
-{% if jekyll %}
-  {% assign headers   = site.headers %}
-  {% assign slides    = site.slides %}
-  {% assign style_css = 'style.css' %}
-{% else %}
-  {% capture style_css %}{{ name }}.css{% endcapture %}
-{% endif %}
+{% capture style_css %}{{ name }}.css{% endcapture %}
 
 <!doctype html>
 <html lang="en">
